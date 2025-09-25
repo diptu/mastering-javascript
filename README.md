@@ -1,6 +1,13 @@
 # Mastering JavaScript
 
 Welcome to **Mastering JavaScript**! 🚀 This repository will serve as your structured journey to becoming highly skilled in JavaScript, covering everything from fundamentals to **advanced concepts, databases, frameworks, backend integrations, and system design**.
+![Beginner](https://img.shields.io/badge/Level-Beginner-brightgreen?logo=javascript)
+![Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow?logo=node.js)
+![Advanced](https://img.shields.io/badge/Level-Advanced-red?logo=next.js)
+![Database](https://img.shields.io/badge/Database-PostgreSQL%20%7C%20MongoDB-blue?logo=postgresql)
+![Frontend](https://img.shields.io/badge/Frontend-React%20%7C%20Next.js-61DAFB?logo=react)
+![Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-43853D?logo=node.js)
+![DevOps](https://img.shields.io/badge/DevOps-Docker%20%7C%20CI%2FCD-2496ED?logo=docker)
 
 ---
 
