@@ -120,7 +120,15 @@ Develop a permanent daily coding habit.
 * [x] Installed required tools
 * [x] Created first React app
 * [x] Ran app locally
-🔥 **Consistency check:** Day 01 completed.
+
+### ✅ Day 02 Status
+* [x] Learned difference between create-react-app vs vite app
+* [x] File Structure
+* [x] Understand and use JSX to render elements
+* [x] Create a functional component and render it
+
+
+
 ---
 
 ## 🔗 References
