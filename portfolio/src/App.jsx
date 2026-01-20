@@ -13,17 +13,16 @@ function App() {
   return (
     <>
       <div className="min-h-screen overflow-x-hidden">
-        <h1 class="text-3xl font-bold underline">Hello World !</h1>
 
         <Navbar />
-        <main>
+        {/* <main>
           <Hero />
           <About />
           <Projects />
           <Testimonial />
           <Contact />
 
-        </main>
+        </main> */}
       </div>
     </>
   )
