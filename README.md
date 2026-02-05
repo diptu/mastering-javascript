@@ -112,36 +112,6 @@ Welcome to **Mastering JavaScript**! 🚀 This repository will serve as your str
 
 ---
 
-## 📂 Repository Structure
-
-```
-mastering-javascript/
-├── 01-basics/
-├── 02-dom/
-├── 03-tooling/
-├── 04-react/
-├── 05-nextjs/
-├── 06-nodejs/
-├── 07-databases/
-│   ├── postgresql/
-│   └── mongodb/
-├── 08-advanced/
-├── 09-devops/
-├── 10-system-design/
-└── projects/
-```
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repo
-2. Navigate to the topic folder
-3. Run `npm install` if package.json exists
-4. Follow along with exercises & notes
-
----
-
 ## 📖 Next Steps
 
 * Week 1: Core JavaScript deep dive
