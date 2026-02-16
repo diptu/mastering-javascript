@@ -1,14 +1,22 @@
 import express from 'express';
+import 'dotenv/config';
 import { setupSwagger } from './swagger/index.js';
-
+import cookieParser from 'cookie-parser';
+import connectionDB from './config/mongodb.js'
+import cors from 'cors'
 const app = express();
 
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // optional
+app.use(cookieParser());
+app.use(cors({ credentials: true }));
 /* Swagger */
 setupSwagger(app);
 
-/* Routes */
-// #swagger.tags = ['Health']
-// #swagger.summary = 'Health check'
+connectionDB();
+
+
 app.get('/health', (req, res) => {
     res.json({
         status: 'OK',
@@ -23,8 +31,9 @@ app.get('/', (req, res) => {
     });
 });
 
+const port = process.env.PORT || 4000;
 /* Server */
-app.listen(3000, () => {
-    console.log('Server: http://localhost:3000');
-    console.log('Docs:   http://localhost:3000/api-docs');
+app.listen(port, () => {
+    console.log(`Server: http://localhost ${port}`);
+    console.log(`Docs:   http://localhost: ${port} / api - docs`);
 });
