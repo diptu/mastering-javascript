@@ -7,7 +7,11 @@ function App() {
 
   return (
     <>
-      <ProductDetails></ProductDetails>
+      <div className='row'>
+        <div>
+          <ProductDetails></ProductDetails>
+        </div>
+      </div>
     </>
   )
 }
