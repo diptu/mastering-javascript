@@ -7,12 +7,15 @@ let style = {
 let Productcount = 5
 let isAvailable = 'Available'
 
-let badgeClass = 'badge-margin-left-80 badge '
-badgeClass += isAvailable === 'Available' ? 'bg-success' : 'bg-danger'
+
 function DisplayProductCount() {
     return Productcount > 0 ? Productcount : 'Zero';
 }
-const ProductDetails = ({ id, name, description, imgUrl, price }) => {
+const ProductDetails = ({ id, name, description, imgUrl, price, isAvailable }) => {
+
+    let badgeClass = 'badge-margin-left-80 badge '
+    badgeClass += isAvailable ? 'bg-success' : 'bg-danger'
+
     return (
         <ul class="list-group shadow">
             <li class="list-group-item">
@@ -25,7 +28,7 @@ const ProductDetails = ({ id, name, description, imgUrl, price }) => {
                             <button className='btn btn-primary'>-</button>
                             <span style={style}>{DisplayProductCount()}</span>
                             <button className='btn btn-primary'>+</button>
-                            <span className={badgeClass}>{isAvailable}</span>
+                            <span className={badgeClass}>{isAvailable ? 'Available' : 'Unvailable'}</span>
 
                         </div>
                     </div><img src={imgUrl} alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2" />

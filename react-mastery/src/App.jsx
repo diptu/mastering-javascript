@@ -65,6 +65,7 @@ function App() {
             description={products[0].desc}
             imgUrl={products[0].image}
             price={products[0].price}
+            isAvailable={products[0].isAvailable}
 
           >
           </ProductDetails>
@@ -74,6 +75,8 @@ function App() {
             description={products[1].desc}
             imgUrl={products[1].image}
             price={products[1].price}
+            isAvailable={products[1].isAvailable}
+
           ></ProductDetails>
 
         </div>
