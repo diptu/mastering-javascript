@@ -9,3 +9,7 @@ body {
 .text-gray {
     color: #aaa;
 }
+
+.badge-margin-left-80 {
+    margin-left: 80px;
+}
