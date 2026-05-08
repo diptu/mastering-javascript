@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ProductDetails from './components/ProductDetails'
+import ProductList from './components/ProductList'
 import './App.css'
 import milkImg from './images/fresh-milk.png';
 import cheeseImg from './images/cottage-cheese.png';
@@ -59,26 +59,27 @@ function App() {
     <>
       <div className='row'>
         <div>
-          <ProductDetails
-            id={products[0].pID}
-            name={products[0].pName}
-            description={products[0].desc}
-            imgUrl={products[0].image}
-            price={products[0].price}
-            isAvailable={products[0].isAvailable}
+          <ul class="list-group shadow">
+            <ProductList
+              id={products[0].pID}
+              name={products[0].pName}
+              description={products[0].desc}
+              imgUrl={products[0].image}
+              price={products[0].price}
+              isAvailable={products[0].isAvailable}
 
-          >
-          </ProductDetails>
-          <ProductDetails
-            id={products[1].pID}
-            name={products[1].pName}
-            description={products[1].desc}
-            imgUrl={products[1].image}
-            price={products[1].price}
-            isAvailable={products[1].isAvailable}
+            >
+            </ProductList>
+            <ProductList
+              id={products[1].pID}
+              name={products[1].pName}
+              description={products[1].desc}
+              imgUrl={products[1].image}
+              price={products[1].price}
+              isAvailable={products[1].isAvailable}
 
-          ></ProductDetails>
-
+            ></ProductList>
+          </ul>
         </div>
       </div>
     </>
