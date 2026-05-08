@@ -1,3 +1,4 @@
+import Button from "./Button";
 
 let style = {
     padding: '0px 20px',
@@ -18,10 +19,11 @@ const ProductDetails = ({ price, isAvailable }) => {
     return (
         <div class="d-flex align-items-center justify-content-start mt-1">
             <h6 class="font-weight-bold my-2">Price	: ${price}</h6>
-            <button className='btn btn-primary'>-</button>
+            <Button>-</Button>
             <span style={style}>{DisplayProductCount()}</span>
-            <button className='btn btn-primary'>+</button>
+            <Button>+</Button>
             <span className={badgeClass}>{isAvailable ? 'Available' : 'Unvailable'}</span>
+
 
         </div>
 
