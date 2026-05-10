@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CreateProduct from './CreateProduct'
 
-const ProductForm = () => {
+const ProductForm = (props) => {
 
 
     let [userInput, updateUserInput] = useState(
@@ -73,7 +73,7 @@ const ProductForm = () => {
             image: userInput.pImage,
             price: Number(userInput.pPrice)
         }
-        console.log(product)
+        props.CreateProduct(product)
         // Crear the form - 2 way data binding
         updateUserInput(
             {

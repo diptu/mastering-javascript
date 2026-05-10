@@ -5,12 +5,16 @@ import CreateProduct from './components/createProduct/CreateProduct'
 
 
 function App() {
+  let [product, updateProduct] = useState('')
+  const createProduct = (product) => {
+    updateProduct(product)
+  }
 
 
   return (
     <>
-      <CreateProduct />
-      <ProductList />
+      <CreateProduct createProduct={createProduct} />
+      <ProductList newProduct={product} />
     </>
   )
 }

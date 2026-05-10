@@ -48,9 +48,9 @@ let products = [
 ]
 
 
-const ProductList = () => {
+const ProductList = (props) => {
 
-
+    console.log(props.newProduct)
 
     return (
         <div className='row'>
