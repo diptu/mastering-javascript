@@ -1,6 +1,6 @@
 import ProductDetails from "./ProductDetails"
 
-const ProductList = ({ id, name, description, imgUrl, price, isAvailable }) => {
+const Products = ({ id, name, description, imgUrl, price, isAvailable }) => {
 
 
 
@@ -21,4 +21,4 @@ const ProductList = ({ id, name, description, imgUrl, price, isAvailable }) => {
     )
 }
 
-export default ProductList
+export default Products
