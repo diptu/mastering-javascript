@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useId } from 'react'
 import Products from './Products'
 
 
 const ProductList = (props) => {
+
 
     return (
         <div className='row'>
@@ -10,7 +11,9 @@ const ProductList = (props) => {
                 <ul class="list-group shadow">
                     {
                         props.newProductList.map(product =>
+
                             <Products
+                                key={product?.pID}
                                 id={product?.pID}
                                 name={product?.pName}
                                 description={product?.desc}

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import ProductList from './components/product/ProductList'
 import './App.css'
 import CreateProduct from './components/createProduct/CreateProduct'
@@ -57,7 +57,11 @@ let products = [
 function App() {
   let [newProductList, updateNewProductList] = useState(products)
 
+
   const createProduct = (product) => {
+    product.pID = newProductList.length + 1
+
+
     updateNewProductList([product, ...newProductList])
   }
 
