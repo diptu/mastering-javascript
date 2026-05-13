@@ -6,28 +6,26 @@ const ProductList = (props) => {
 
 
     return (
-        <div className='row'>
-            <div>
-                <ul class="list-group shadow">
-                    {
-                        props.newProductList.map(product =>
 
-                            <Products
-                                key={product?.pID}
-                                id={product?.pID}
-                                name={product?.pName}
-                                description={product?.desc}
-                                imgUrl={product?.image}
-                                price={product?.price}
-                                isAvailable={product.isAvailable}
+        <ul class="list-group shadow">
+            {
+                props.newProductList.map(product =>
 
-                            ></Products>
+                    <Products
+                        key={product?.pID}
+                        id={product?.pID}
+                        name={product?.pName}
+                        description={product?.desc}
+                        imgUrl={product?.image}
+                        price={product?.price}
+                        isAvailable={product.isAvailable}
 
-                        )};
+                    ></Products>
 
-                </ul>
-            </div>
-        </div>
+                )};
+
+        </ul>
+
 
     )
 }
