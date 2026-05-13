@@ -4,6 +4,12 @@ import Products from './Products'
 
 const ProductList = (props) => {
 
+    if (props.newProductList.length === 0)
+        return (<h3>No product found</h3>)
+
+
+
+
 
     return (
 
