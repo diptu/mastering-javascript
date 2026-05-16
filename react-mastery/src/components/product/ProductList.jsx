@@ -25,6 +25,8 @@ const ProductList = (props) => {
                         imgUrl={product?.image}
                         price={product?.price}
                         isAvailable={product.isAvailable}
+                        pCount={product.pCount}
+
 
                     ></Products>
 

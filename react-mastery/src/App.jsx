@@ -18,7 +18,8 @@ let products = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
     isAvailable: true,
     image: milkImg,
-    price: 12
+    price: 12,
+    pCount: 5
   },
   {
     pID: 2,
@@ -26,7 +27,9 @@ let products = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
     isAvailable: false,
     image: cheeseImg,
-    price: 10
+    price: 10,
+    pCount: 3
+
   },
   {
     pID: 3,
@@ -34,7 +37,9 @@ let products = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
     isAvailable: true,
     image: brocoliImg,
-    price: 15
+    price: 15,
+    pCount: 2
+
   },
   {
     pID: 4,
@@ -50,7 +55,8 @@ let products = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
     isAvailable: false,
     image: oliveoilImg,
-    price: 14
+    price: 14,
+    pCount: 5
   }
 ]
 

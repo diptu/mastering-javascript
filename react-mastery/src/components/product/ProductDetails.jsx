@@ -3,8 +3,8 @@ import { useState } from "react";
 
 
 
-const ProductDetails = ({ price, isAvailable }) => {
-    const MAX_LIMIT = 5;
+const ProductDetails = ({ price, isAvailable, pCount }) => {
+    const MAX_LIMIT = pCount;
     let [productCount, setProductCount] = useState(0)
 
     let increamentproductCount = () => {
@@ -27,12 +27,12 @@ const ProductDetails = ({ price, isAvailable }) => {
     return (
         <div class="d-flex align-items-center justify-content-start mt-1">
             <h6 class="font-weight-bold my-2">Price	: ${price}</h6>
-            <Button eventHandler={decreamentproductCount}>-</Button>
+            <Button eventHandler={decreamentproductCount} disable={productCount == 0}>-</Button>
             <span style={{
                 padding: '0px 20px',
                 fontSize: 12
             }}>{productCount}</span>
-            <Button eventHandler={increamentproductCount}>+</Button>
+            <Button eventHandler={increamentproductCount} disable={productCount == MAX_LIMIT}>+</Button>
             <span className={badgeClass}>{isAvailable ? 'Available' : 'Unvailable'}</span>
 
 
